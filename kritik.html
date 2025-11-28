@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Admin - Kritik & Saran</title>
+    <!-- Firebase SDK - HARUS SAMA dengan form -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <link rel="stylesheet" href="style_kritik/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kritik & Saran</h1>
+            <p>Daftar semua masukan dari pengguna</p>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-card">
+                <div class="stat-number" id="totalMessages">0</div>
+                <div class="stat-label">Total Pesan</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="newMessages">0</div>
+                <div class="stat-label">Pesan Baru</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" id="todayMessages">0</div>
+                <div class="stat-label">Hari Ini</div>
+            </div>
+        </div>
+        
+        <div class="feedback-list" id="feedbackList">
+            <div class="loading-state">
+                <i class="fas fa-spinner fa-spin"></i>
+                <h3>Memuat data...</h3>
+            </div>
+        </div>
+    </div>
+    <script src="script_kritik/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Admin - Kritik & Saran</title>
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="style_admin/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Kritik & Saran</h1>
+            <p>Daftar semua masukan dari pengguna</p>
+        </div>
+        
+        <div class="feedback-list" id="feedbackList">
+            <div class="empty-state">
+                <i class="fas fa-inbox"></i>
+                <h3>Belum ada pesan</h3>
+                <p>Pesan dari pengguna akan muncul di sini</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script_admin/script.js"></script>
+</body>
+</html>
